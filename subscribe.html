@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Link to the CSS style. Set font and name of the page. Allow page to be compatible with multiple devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="front-page-style.css" rel="stylesheet">
+    <title>Join Kogan Today</title>
+</head>
+
+<body>  
+    <header>
+        <!-- Positioning all the elements in grid -->
+        <div class="grid-container">
+        <!-- Header with image of logo leading back to landing page -->
+            <div class="header">
+                <img src="koganlogo.png" alt="Kogan First logo"/>
+            </div>
+        <!-- Creating a navigation bar which includes multiple items of the same classs -->
+            <div class="nav">
+                <a href="/About" class="navigation-items">About</a>
+                <a href="/HowItWorks" class="navigation-items">HOW IT WORKS</a>
+                <a href="/ContactUs" class="navigation-items"><strong>CONTACT US</strong></a>
+                <a href="/MyAccount" class="navigation-items">MY ACCOUNT</a>
+            </div>
+        </div>
+
+    <main>
+      <!--Creating the background for main content-->
+      <div class="main-background">
+        <!--Creating section for the entire form-->
+        <div class="form-total">
+          <form id="email-form" name="email-form" data-name="Email Form" class="form">
+          <div class="singup-heading">
+            <h2>Sign Up</h2>
+          </div>
+            <label for="name" class="field-label">FULL NAME</label>
+            <input type="text" class="w-input" name="name" data-name="Name" id="name">
+            <label for="email" class="field-label"> EMAIL</label>
+            <input type="text" class="w-input" name="email" data-name="Email" id="email">
+            <label for="password" class="field-label">PASSWORD</label>
+            <input type="text" class="w-input" name="password" data-name="Password" id="password">
+          </form>
+          <!--Creating terms & conditions statement-->
+          <div class="terms"> 
+              <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember" required> By continuing, you agree to Kogan Terms & Services and Privacy Policy 
+                  </label>
+                </div>
+          </div>
+          <div class="submit-button">
+            <button>GET STARTED</button>
+        </div>
+      </div>
+    </main>
+    </header>
+  </body>
+</html>
+  
