@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="front-page-style.css" rel="stylesheet">
+    <script src="form-validation.js"></script>
     <title>Checkout Confirmation</title>
 </head>
 
@@ -89,7 +90,7 @@
                     </div>
 
             <div class="container-2">       
-                <h3 class="payment-details">Payment</h3>
+               <!-- <h3 class="payment-details">Payment</h3>
                     <div class="card-details">
                         <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
                         <label class="custom-control-label" for="credit">Credit card</label>
@@ -103,7 +104,7 @@
                         <label class="custom-control-label" for="paypal">PayPal</label>
                     </div>
                 </div>
-            <div class="container-3">
+            <div class="container-3">   --> 
                     <div class="card-details">
                         <label for="cc-name">Name on card</label>
                         <input type="text" class="form-control" id="cc-name" placeholder="" required>
@@ -114,14 +115,14 @@
                     </div>
                     <div class="card-details">
                         <label for="cc-number">Credit card number</label>
-                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <input type="text" class="form-control" id="cc-number" placeholder="1234 1234 1234 1234" required>
                         <div class="invalid-feedback">
                             Credit card number is required
                         </div>
                     </div>
                     <div class="card-details">
                         <label for="cc-expiration">Expiration</label>
-                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="MM/YYYY" required>
                         <div class="invalid-feedback">
                             Expiration date required
                         </div>
@@ -134,12 +135,11 @@
                         </div>
                     </div>
                 </div>
-            </br>
-        </br>
-            <hr class="checkout-button">
-            <button class="checkout-button-type" type="submit">Continue to checkout</button>
+            </div>
         </form>
     </div>
+    <hr class="checkout-button">
+        <button class="checkout-button-type" type="submit">Continue to checkout</button>
     </main>
 </html>
 
