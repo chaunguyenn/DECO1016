@@ -33,10 +33,13 @@
     <main> 
         <div class="row">
             <div class="container-1">
-            <!--Billing Address Title-->
-                <h3> Billing Address </h3>
-            <!--Creating checkout form for user input-->
-                <form class="needs-validation" novalidate>                        
+            <!--Billing Address Title
+                <h3> Order Summary </h3>
+            Creating checkout form for user input
+                    <div class="order-summary">
+                        <div class=
+                    </div>-->
+                <h3> Billing Address</h3>         
                     <div class="address-details">
                         <label for="address">Address</label>
                         <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
@@ -61,7 +64,7 @@
                             Please select a valid country.
                         </div>
                     </div>
-                <!--States in Au input-->
+                    <!--States in Au input-->
                     <div class="address-details">
                         <label for="state">State</label>
                         <select class="state" id="state" required>
@@ -73,38 +76,39 @@
                             <option>SA</option>
                             <option>TAS</option>
                         </select>
-                    <!-- In case users choose wrong input-->
+                     <!--In case users choose wrong input-->
                         <div class="invalid-feedback">
                             Please provide a valid state.
                         </div>
                     </div>
-                <!--Creating zip bar-->
+                     <!--   Creating zip bar-->
                     <div class="address-details">
                         <label for="zip">Zip</label>
                         <input type="text" class="zip" id="zip" placeholder="" required>
-                    <!-- In case of invalid zip code-->
+                     <!--In case of invalid zip code-->
                         <div class="invalid-feedback">
                             Zip code required.
                         </div>
                     </div>
                     </div>
 
-            <div class="container-2">       
-               <!-- <h3 class="payment-details">Payment</h3>
-                    <div class="card-details">
-                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                        <label class="custom-control-label" for="credit">Credit card</label>
-                    </div>
-                    <div class="card-details">
-                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="card-details">
-                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="paypal">PayPal</label>
-                    </div>
-                </div>
-            <div class="container-3">   --> 
+            <div class="container-2">   
+                    <h3 class="payment-details">Payment</h3>
+                        <div class="card-details">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="card-details">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="card-details">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                        </div>   
+            </div>
+            <div class="container-3">    
+                <form class="needs-validation" novalidate>  
                     <div class="card-details">
                         <label for="cc-name">Name on card</label>
                         <input type="text" class="form-control" id="cc-name" placeholder="" required>
@@ -134,9 +138,8 @@
                             Security code required
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
-        </form>
     </div>
     <hr class="checkout-button">
         <button class="checkout-button-type" type="submit">Continue to checkout</button>
